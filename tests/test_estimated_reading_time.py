@@ -18,30 +18,36 @@ Given a text with 1200 words
 It returns a time of 6 minutes
 """
 
-# def test_1200_words():
-#     text = " ".join(['word' for i in range(0, 1200)])
-#     result = estimated_reading_time(text)
-#     assert result == 'This text should take 6 minutes to read'
+def test_1200_words():
+    text = []
+    for i in range(0, 1200):
+        text.append('word')
+    result = estimated_reading_time(text)
+    assert result == 'This text should take 6 minutes to read'
 
 # """
 # Given a text of 12,000 words
 # It returns a time of 60 minutes
 # """
 
-# def test_12000_words():
-#     text = " ".join(['word' for i in range(0, 12000)])
-#     result = estimated_reading_time(text)
-#     assert result == 'This text should take 60 minutes to read'
+def test_12000_words():
+    text = []
+    for i in range(0, 12000):
+        text.append('word')
+    result = estimated_reading_time(text)
+    assert result == 'This text should take 60 minutes to read'
 
 # """
 # Given a text of 2300 words
 # It returns a time of 38 minutes
 # """
 
-# # def test_2300_words():
-# #     text = " ".join(['word' for i in range(0, 2300)])
-# #     result = estimated_reading_time(text)
-# #     assert result == 'This text should take 38 minutes to read'
+def test_2300_words():
+    text = []
+    for i in range(0, 2300):
+        text.append('word')
+    result = estimated_reading_time(text)
+    assert result == 'This text should take 12 minutes to read'
 
 """
 Given None as input,
