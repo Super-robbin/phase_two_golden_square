@@ -16,11 +16,12 @@ Returns:
     E.g. 'This text should take .. minutes to read'
 
 Side effects:
-    Exception for inputs that are not string
+    Exception for inputs that are not strings
     Exception for inputs that is equal to None
 
 
 Examples:
+
 """
 Given a text with 600 words
 It returns a time of 3 minutes

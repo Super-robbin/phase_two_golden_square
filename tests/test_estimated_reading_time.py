@@ -62,4 +62,3 @@ def test_no_string_given():
     with pytest.raises(Exception) as error:
         estimated_reading_time(123)
     assert str(error.value) == 'Please enter a string'
-
