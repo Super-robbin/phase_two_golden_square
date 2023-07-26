@@ -12,10 +12,12 @@ Parameters:
     text: a long string of text to read
 
 Returns:
-    a new string, units are in hours, minutes and seconds
+    a new string stating the estimated reading time in minute
+    E.g. 'This text should take .. minutes to read'
 
 Side effects:
-    This function should print the reading time integer, no other side effects
+    Exception for inputs that are not string
+    Exception for inputs that is equal to None
 
 
 Examples:
@@ -23,34 +25,41 @@ Examples:
 Given a text with 600 words
 It returns a time of 3 minutes
 """
-estimated_reading_time(text) => '3 minutes'
+def test_600_words(''..600..'):
+==> '3 minutes'
+
 
 """
-Given a text with 20 words
-It returns a time of 6 seconds
+Given a text with 1200 words
+It returns a time of 6 minutes
 """
-estimated_reading_time(text) => '6 seconds'
+def test_1200_words(''..1200..'):
+==> '6 minutes'
 
 """
 Given a text of 12,000 words
-It returns a time of 1 hours
+It returns a time of 60 minutes
 """
-estimated_reading_time(text) => '1 hour'
+def test_1200_words(''..1200..'):
+==> '6 minutes'
 
 """
 Given a text of 2300 words
-It returns a time of 11 minutes and 30 seconds
+It returns a time of 38 minutes
 """
-estimated_reading_time(text) => '11 minutes, 30 seconds'
+def test_2300_words(''..2300..'):
+==> '38 minutes'
 
 """
-Given a text of 32200 words
-It returns a time of 2 hours and 41 minutes
+Given None as input,
+Raise exception
 """
-estimated_reading_time(text) => '2 hours, 41 minutes'
+def test_None_value(None):
+==> 'Please enter a string'
 
 """
-Given anything other than a string, e.g. a number
-It throws an error
+Given an input different from a string, e.g. number
+Raise exception
 """
-estimated_reading_time(123) => throws an error
+def test_no_string_given(123):
+==> 'Please enter a string'
