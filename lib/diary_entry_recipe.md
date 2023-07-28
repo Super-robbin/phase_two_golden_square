@@ -1,6 +1,6 @@
 1. Describe the problem
     User need an interface that helps to: format diary entry, count words in a diary entry,
-    reading time for contents, and recieve a chunk of a content that he can read in a given minutes.
+    reading time for contents, and receive a chunk of a content that he can read in a given minutes.
 
 2. Design the function signature.
     The signature of a class includes:
