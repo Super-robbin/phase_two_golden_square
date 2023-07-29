@@ -1,7 +1,7 @@
 Problem:
-The user can keep track of the tasks
-He wants a program that can add todo tasks to and see a list of them.
-He also needs a program that marks tasks as completed in a list.
+The user needs help to keep track of the tasks
+The user wants a program that can add todo tasks to and see a list of them.
+The user also needs a program that marks tasks as completed in a list.
 Finally, the user wants to remove the completed tasks from the list.
 
 Function Signature:
@@ -55,8 +55,7 @@ def test_add_todo_tasks('laundry, shopping, cooking'):
     ==> list = ['laundry', 'shopping', 'cooking']
 
 """
-Returns the list if not empty
-Otherwise raise Exception
+Return a list with the added todo tasks
 """
 def test_return_list():
     ==> list = ['laundry', 'shopping', 'cooking']
