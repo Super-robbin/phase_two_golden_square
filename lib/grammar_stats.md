@@ -4,19 +4,33 @@ So that I want to check if a text starts with capital letter and ends with sente
 I also want to check what percentage of the 'check' have passed the tests.
 
 Function Signature:
-The signature of a class includes:
+    The signature of a class includes:
+    2 different functions:
 
-def check(self, text)
-    Verify if text starts with capital letter and ends with sentence-ending punctuation mark
+    def check(self, text)
+        Verify if text starts with capital letter and ends with sentence-ending punctuation mark
 
-Parameters:
-    text: a long string of text to check
+    Parameters:
+        text: a long string of text to check
 
-Returns:
-    a boolean value True if the text starts with capital letter and ends with sentence-ending punctuation mark
+    Returns:
+        A boolean value True if the text starts with capital letter and ends with sentence-ending punctuation mark
 
-Side effects:
-    No side effects
+    Side effects:
+        No side effects
+
+    def percentage_good(self)
+        Verify if text starts with capital letter and ends with sentence-ending punctuation mark
+
+    Parameters:
+        No parameters
+
+    Returns:
+        An integer number representing the percentage of how many tests passed the 'check' function
+
+    Side effects:
+        No side effects
+
 
 Examples:
 

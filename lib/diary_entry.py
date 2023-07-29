@@ -14,7 +14,7 @@ class DiaryEntry:
     def reading_time(self, wpm):
         words = self.contents.split()
         word_count = len(words)
-        return word_count / 200
+        return word_count / wpm
 
     def reading_chunk(self, wpm, minutes):
         chunk_of_words = int(wpm * minutes)
