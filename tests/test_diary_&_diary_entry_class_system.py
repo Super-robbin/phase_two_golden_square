@@ -8,7 +8,6 @@ def test_initially_has_no_entries():
     all_diary = Diary()
     assert all_diary.all() == []
 
-
 """
 Given I add two entries
 I can see them represented in a list, with the right format
