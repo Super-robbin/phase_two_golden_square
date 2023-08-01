@@ -18,6 +18,7 @@
         Side effects:
         Exception for inputs if it's not a string
         Exception for input that is equal to None
+        
 3. Examples as Tests
 
     """
